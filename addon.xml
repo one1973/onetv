@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.reypelis" 
+       name="Reypelis" 
+       version="1.0.7" 
+       provider-name="JoneBartor">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.25.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+		<import addon="script.module.yt-dlp" version="2024.0.0"/>
+    </requires>
+    
+    <!-- Declaramos que es un plugin de video [citation:2] -->
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    
+    <!-- Metadatos y assets requeridos [citation:22] -->
+    <extension point="xbmc.addon.metadata">
+        <summary lang="es_ES">Películas y series de Reypelis</summary>
+        <description lang="es_ES">Reproduce contenido de reypelis.net</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
